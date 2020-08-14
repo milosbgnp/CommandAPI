@@ -16,14 +16,14 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
-  displayName: 'Use NuGet 5.4.0'
+  displayName: 'Use NuGet 5'
   inputs:
-    versionSpec: 5.4.0
+    versionSpec: 5
 
 - task: UseDotNet@2
-  displayName: ".NET Core 3.1.x"
+  displayName: ".NET Core 3.1"
   inputs:
-    version: '3.1.x'
+    version: '3.1'
     packageType: sdk
 
 - task: NuGetCommand@2
