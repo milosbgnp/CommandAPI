@@ -26,5 +26,5 @@ steps:
 - task: VSBuild@1
   displayName: 'Build solution'
   inputs:
-    solution: '**/$(SolutionName).sln'
+    solution: '$(SolutionName).sln'
     configuration: '$(Configuration)'
